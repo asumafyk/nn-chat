@@ -9,3 +9,20 @@ p.card-text {
   white-space: pre-wrap;
   word-break: break-all;
 }
+.large-text {
+  font-size: 1.4rem !important; /* 標準（leadクラス）より一回り大きく */
+  line-height: 1.6;
+}
+/* ナビゲーションバーの背景を美しいグラデーションに変更 */
+.navbar.bg-primary {
+  /* 左から右へ向かって、少し濃い青からいつもの青へ変化するグラデーション */
+  background: linear-gradient(135deg, #28b7ff 0%, #0a58ca 100%) !important;
+  
+  /* 開閉する検索バーとの一体感を出すため、少し強めの影を落とす */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 検索バーが開いたときの背景もナビゲーションバーと統一 */
+#searchCollapse div.bg-primary {
+  background: linear-gradient(135deg, #28b7ff 0%, #0a58ca 100%) !important;
+}
